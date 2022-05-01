@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Rating</title>
+</head>
+<body>
+    
+    <a href="first.html">Main Page</a> &nbsp; &nbsp;
+
+<!--Video for people to comment on using form-->
+
+    <div id="video">
+        <h1>Video</h1>
+        <figure>
+            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xa-4IAR_9Yw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+          
+            <figcaption>
+                <p>Watch the video and respond to the questions below.</p>
+            </figcaption>
+        </figure>
+        <br>
+    </div>    
+
+<!--form for people to use to comment-->
+
+    <div id="questions">
+        <h3>Questions:</h3>
+        <form>
+            <label for="username">What is your name?
+            <input type="text" name="username" minlength="3" maxlength="10" required>
+            </label>
+            <p></p>
+            <label for="rating">On a scale of one to five how would you rate this video?
+            <input type="number" name="rating" min="1" max="5" required>
+            </label>
+            <p></p>
+            <label for="funny">How funny was the video? (left is "not funny at all", right is "very funny") &nbsp;
+                <input type="range" name="funny" min="0" max="10" step="0.1" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="5"></option>
+                    <option value="10"></option>
+                </datalist>
+            </label>
+            <p></p>
+            <label for="rewatch">Would you want to watch another video by this creator given the oppurtunity?
+            <select name="rewatch">
+                <option value="yes">Yes.</option>
+                <option value="no">No.</option>
+                <option value="maybe">Maybe.</option>
+            </select>
+            </label>
+            <p>Any comments on the video:</p>
+            <textarea id="comment" name="comment" rows="4" cols="50">Type here...</textarea>
+            <p></p>
+            <input type="submit" value="Submit">
+            
+            
+
+
+        </form>
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>
