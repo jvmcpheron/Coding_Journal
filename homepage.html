@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "./journalStyle.css" rel ="stylesheet">
     <title>Coding Journal</title>
 </head>
 
@@ -14,21 +15,28 @@
 <main>
 <!--Links to different spots on the site-->
     <nav>
-        <a href="#about">About Me  </a> &nbsp; &nbsp;
-        <a href="#learning">What I've Learned  </a> &nbsp; &nbsp;
-        <a href="#plans">My Plans for the Future</a>
+       
+        <div class="right">
+            <a href="#about">About Me  </a> &nbsp; &nbsp;
+            <a href="#learning">What I've Learned  </a> &nbsp; &nbsp;
+        
+            <a href="#plans">My Plans for the Future</a> &nbsp; &nbsp;
+        </div>
+        <div class="left">
+            &nbsp; &nbsp; <img src = "Screenshot_20220512-162331-137.jpg" />
+        </div>
     </nav>
     
 <!--About section-->
     <header>
         <h1>My Coding Journey</h1>
+        <a href="https://www.codecademy.com/profiles/jvmcpheron" target="_blank"><img src="IMG_20220219_190121_204.jpg"  /> </a>
     </header>
     <section id="about">
         <br>
         <h2>About Me</h2>
             
             <p>I've decided I want to teach myself to code over the summer! </p>
-            <a href="https://www.codecademy.com/learn" target="_blank"><img src="IMG_20220219_190121_204.jpg"  /> </a>
             <p>I am going to give it my best effort and this html code will log everything I have been learning!</p>
             <p>I will be using Codecademy to learn as much as I can, and try my best to practice along the way.</p>
     </section>
@@ -45,17 +53,19 @@
                 
                 <h4>HTML</h4>
                     <p>Today I made it halfway through the Codecademy HTML course!</p>
-                    <p>Some of the things I have learned:</p>
+                    <div class="list">
+                    <p class="left">Some of the things I have learned:</p>
                     <ul>
                         <li>Lists <em>(ordered and unordered)</em></li>
                         <li>Formatting Text</li>
                         <li>Adding Media and Links</li>
                         <li>Tables</li>
                     </ul>
+                    </div>
                     <p>I am still not completely familiar with everything, but it's a start that I am happy with!</p>
                 <h4>UX and UI Design</h4>
-                    <p>I also learned about UX and UI design! I learned what people in that field do.</p>
-                    <p>In that course I got some familiarity with Figma, and using it to design wireframes and prototypes.</p>
+                    <p>I also learned about UX and UI design! I learned what people in that field do.
+                    In that course I got some familiarity with Figma, and using it to design wireframes and prototypes.</p>
                     <br>
                 </article>
             
@@ -91,8 +101,16 @@
                 <p>I finished my Python course! It's finally time to start my path towards mobile development, starting with CSS!
                     After CSS I wanna learn JavaScript, React, and React Native. Then, if I have time, I can learn Java, Kotlin, and Swift.
                 </p>
+                <br>
             </article>
-
+            <article class="entry">
+                <h3>05/12/2022</h3>
+                <h4>CSS</h4>
+                <p>I've started learning CSS! I've learned some basic styling and how CSS can communicate with HTML! Honestly, it feels
+                    like just from knowing the basics, major doors have opened up for the level of creativity I can have in web design.
+                    I know this journal looks stupid, but for now I'm just sorta using it as a playground to have fun with. 
+                </p>
+            </article>
                 </section>
     
 <!-- plans section -->
@@ -131,7 +149,7 @@
 <br>
 <br>
 <footer>
-<p>Jane made this (2022)</p>
+<p class="left">Jane made this (2022)</p>
 </footer>
 
 
