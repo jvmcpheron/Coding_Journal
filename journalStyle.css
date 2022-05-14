@@ -1,26 +1,37 @@
 *{
     font-family: sans-serif;
     color: white;
+}
+
+body{
+    margin: 25px;
     background: black;
     text-align: center;
 }
+
+header h1{
+    font-size: 50px;
+}
+
+
 
 li{
     text-align: left;
 }
 .list{
     border: white solid;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .left{
     text-align: left;
+   
 }
 
 .right{
     text-align: right;
-}
-td{
-    text-align: left;
+  
 }
 
 footer p {
@@ -32,6 +43,8 @@ a {
 }
 nav a {
     border: rgb(43, 43, 43) solid;
+    padding: 5px;
+    margin: 5px;
     border-radius: 15px;
     background: rgb(50, 50, 50);
 }
@@ -44,14 +57,40 @@ nav img {
 
 
 
-
-
-
 a:hover{
     color: rgb(0, 255, 255);
     font-weight: bold;
 }
 
 .entry{
-    border: solid;
+    margin: 6%;
+    border: 6px white solid;
+    background-color:rgb(43, 43, 43);
+}
+
+
+.entry:hover{
+    border: 7px rgb(255, 110, 255) outset;
+    background-color:rgb(65, 0, 65);
+}
+
+p{
+    margin: 20px;
+}
+
+a img:hover{
+    border: 7px rgb(255, 110, 255) outset;
+}
+
+a img{
+    width: 100%;
+    height: auto;
+}
+
+#firstentry{
+    margin-top: 0%;
+}
+
+#about{
+    margin-bottom: 5%;
 }
